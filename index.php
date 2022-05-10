@@ -18,12 +18,19 @@ class Movie {
         $this -> nome = $_nome;
         $this -> anno = $_anno;
         $this -> genere = $_genere;
-    };
+    }
 }
 
 
 
 $spider = new Movie ("SpiderMan 1", 2003, "Azione");
+$anime = new Movie ("Dragon Ball super hero", 2022, "Anime");
 
-echo "<p>" .  $spider -> name . "</p>";
+echo "<p>" . $spider -> nome . "</p>";
+echo "<p>" . $spider -> anno . "</p>";
+echo "<p>" . $spider -> genere . "</p>";
+
+echo "<p>" . $anime -> nome . "</p>";
+echo "<p>" . $anime -> anno . "</p>";
+echo "<p>" . $anime -> genere . "</p>";
 ?>
