@@ -19,18 +19,45 @@ class Movie {
         $this -> anno = $_anno;
         $this -> genere = $_genere;
     }
+
+
+    public function getNome(){
+        return $this -> nome;
+    }
+    
+    public function getAnno(){
+        return $this -> anno;
+    }
+
+    public function getGenere(){
+        return $this -> genere;
+    }
+
+
 }
 
 
 
 $spider = new Movie ("SpiderMan 1", 2003, "Azione");
-$anime = new Movie ("Dragon Ball super hero", 2022, "Anime");
+
+
 
 echo "<p>" . $spider -> nome . "</p>";
 echo "<p>" . $spider -> anno . "</p>";
 echo "<p>" . $spider -> genere . "</p>";
 
-echo "<p>" . $anime -> nome . "</p>";
-echo "<p>" . $anime -> anno . "</p>";
-echo "<p>" . $anime -> genere . "</p>";
+
+$anime = new Movie ("Dragon Ball super hero", 2022, "Anime");
+
+
+echo "<p>" . $anime  -> getNome() . "</p>";
+echo "<p>" . $anime -> getAnno() . "</p>";
+echo "<p>" . $anime -> getGenere() . "</p>";
+
+
+
+
+
+echo $anime -> getNome() . " - " . $anime -> getAnno() . " - " . $anime -> getGenere() . "</p>";
+
 ?>
